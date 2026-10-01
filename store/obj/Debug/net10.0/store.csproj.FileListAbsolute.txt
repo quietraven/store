@@ -12,3 +12,4 @@ C:\Users\alice.tyseng\Desktop\Ny mapp\store\store\obj\Debug\net10.0\refint\store
 C:\Users\alice.tyseng\Desktop\Ny mapp\store\store\obj\Debug\net10.0\store.pdb
 C:\Users\alice.tyseng\Desktop\Ny mapp\store\store\obj\Debug\net10.0\store.genruntimeconfig.cache
 C:\Users\alice.tyseng\Desktop\Ny mapp\store\store\obj\Debug\net10.0\ref\store.dll
+C:\Users\alice.tyseng\Desktop\Ny mapp\store\store\obj\Debug\net10.0\store.sourcelink.json
