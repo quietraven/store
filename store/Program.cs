@@ -1,6 +1,8 @@
 ﻿
 // int m = int.Parse(n);
 // int.TryParse(n, out m);
+using System.Diagnostics;
+
 string choice = "";
 int money = 10000;
 int cost = 0;
@@ -23,14 +25,25 @@ while (money > 0)
     {
         Console.WriteLine("how many would you like to buy? ");
         numberString = Console.ReadLine();
-        int.TryParse(numberString, out number);
+
+          
+        while (!int.TryParse(numberString, out number))
+        {
+            Console.WriteLine("This is a string\nPlease write a number");
+            numberString = Console.ReadLine();
+        }
+        
         while (number < 0)
         {
             Console.WriteLine("The number has to be positive\n pleas write a different number");
             numberString = Console.ReadLine();
             int.TryParse(numberString, out number);
+
+
+
         }
         cost = number * 5000;
+        Console.WriteLine(cost);
          if (cost > money)
         {
             Console.WriteLine("you don't have enough coins");
@@ -47,7 +60,14 @@ while (money > 0)
     {
         Console.WriteLine("how many would you like to buy? ");
         numberString = Console.ReadLine();
-        int.TryParse(numberString, out number);
+        
+  
+        while (!int.TryParse(numberString, out number))
+        {
+            Console.WriteLine("This is a string\nPlease write a number");
+            numberString = Console.ReadLine();
+        }
+
         while (number < 0)
         {
             Console.WriteLine("The number has to be positive\n pleas write a different number");
@@ -72,7 +92,14 @@ while (money > 0)
     {
         Console.WriteLine("how many would you like to buy? ");
         numberString = Console.ReadLine();
-        int.TryParse(numberString, out number);
+        
+  
+        while (!int.TryParse(numberString, out number))
+        {
+            Console.WriteLine("This is a string\nPlease write a number");
+            numberString = Console.ReadLine();
+        }
+
         while (number < 0)
         {
             Console.WriteLine("The number has to be positive\n pleas write a different number");
