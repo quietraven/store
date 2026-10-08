@@ -21,6 +21,12 @@ while (money > 0)
 
     choice = Console.ReadLine();
 
+    while (choice != "1" && choice != "2" && choice != "3")
+    {
+        Console.WriteLine("choose one of the options above");
+        choice = Console.ReadLine();
+    }
+
     if (choice == "1")
     {
         Console.WriteLine("how many would you like to buy? ");
@@ -35,7 +41,7 @@ while (money > 0)
         
         while (number < 0)
         {
-            Console.WriteLine("The number has to be positive\n pleas write a different number");
+            Console.WriteLine("The number has to be positive\n please write a different number");
             numberString = Console.ReadLine();
             int.TryParse(numberString, out number);
 
@@ -43,7 +49,7 @@ while (money > 0)
 
         }
         cost = number * 5000;
-        Console.WriteLine(cost);
+        
          if (cost > money)
         {
             Console.WriteLine("you don't have enough coins");
@@ -56,6 +62,7 @@ while (money > 0)
         }
 
     }
+
     if (choice == "2")
     {
         Console.WriteLine("how many would you like to buy? ");
@@ -136,11 +143,7 @@ while (money > 0)
         }
 
     }
-    while (choice != "1" && choice != "2" && choice != "3")
-    {
-        Console.WriteLine("choose one of the options above");
-        choice = Console.ReadLine();
-    }
+    
 
 
 }
